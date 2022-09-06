@@ -16,9 +16,10 @@ jobs:
         with:
           # “最近更新时间” 等 git 日志相关信息，需要拉取全部提交记录
           fetch-depth: 0
+          submodules: recursive
 
-      - name: Checkout submodules
-        uses: goravel/docs@master
+      # - name: Checkout submodules
+      #   uses: goravel/docs@master
 
       - name: Setup Node.js
         uses: actions/setup-node@v1
