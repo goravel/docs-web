@@ -18,9 +18,6 @@ jobs:
           fetch-depth: 0
           submodules: recursive
 
-      # - name: Checkout submodules
-      #   uses: goravel/docs@master
-
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
