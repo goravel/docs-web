@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.51">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <script data-ad-client="ca-pub-4978322804450032" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-HJQNEG5H69"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-HJQNEG5H69');</script><title>队列 | Goravel</title><meta name="description" content="Golang WEB 应用框架">
+    <link rel="modulepreload" href="/assets/app.7583e1e5.js"><link rel="modulepreload" href="/assets/queues.html.c27bd08b.js"><link rel="modulepreload" href="/assets/queues.html.fdb51d37.js"><link rel="prefetch" href="/assets/index.html.6197958f.js"><link rel="prefetch" href="/assets/index.html.d22d6467.js"><link rel="prefetch" href="/assets/getting-started.html.f5acc112.js"><link rel="prefetch" href="/assets/migrations.html.0a8ad508.js"><link rel="prefetch" href="/assets/index.html.b4308b66.js"><link rel="prefetch" href="/assets/facades.html.3ab49708.js"><link rel="prefetch" href="/assets/request-lifecycle.html.e6a4e286.js"><link rel="prefetch" href="/assets/service-providers.html.ca627e85.js"><link rel="prefetch" href="/assets/index.html.5b4b4149.js"><link rel="prefetch" href="/assets/artisan-console.html.0e52a5a5.js"><link rel="prefetch" href="/assets/cache.html.fef409a3.js"><link rel="prefetch" href="/assets/events.html.f1e9a786.js"><link rel="prefetch" href="/assets/mail.html.3f6aefe3.js"><link rel="prefetch" href="/assets/queues.html.1ad8cd6c.js"><link rel="prefetch" href="/assets/task-scheduling.html.f97cc5f4.js"><link rel="prefetch" href="/assets/index.html.e68f8069.js"><link rel="prefetch" href="/assets/compile.html.a0beed5a.js"><link rel="prefetch" href="/assets/configuration.html.3fdc4015.js"><link rel="prefetch" href="/assets/directory-structure.html.185088b3.js"><link rel="prefetch" href="/assets/installation.html.19283d6d.js"><link rel="prefetch" href="/assets/index.html.6fa64b28.js"><link rel="prefetch" href="/assets/controllers.html.64a74579.js"><link rel="prefetch" href="/assets/grpc.html.0859d2a4.js"><link rel="prefetch" href="/assets/logging.html.80f6209b.js"><link rel="prefetch" href="/assets/middleware.html.aa757d65.js"><link rel="prefetch" href="/assets/response.html.a31785f0.js"><link rel="prefetch" href="/assets/routing.html.003998b7.js"><link rel="prefetch" href="/assets/index.html.d66b4e5a.js"><link rel="prefetch" href="/assets/index.html.c6876153.js"><link rel="prefetch" href="/assets/getting-started.html.f6535efb.js"><link rel="prefetch" href="/assets/migrations.html.4319f2a7.js"><link rel="prefetch" href="/assets/index.html.7f002375.js"><link rel="prefetch" href="/assets/facades.html.92f93010.js"><link rel="prefetch" href="/assets/request-lifecycle.html.e74abfca.js"><link rel="prefetch" href="/assets/service-providers.html.4280f780.js"><link rel="prefetch" href="/assets/index.html.bf4278e8.js"><link rel="prefetch" href="/assets/artisan-console.html.54949a12.js"><link rel="prefetch" href="/assets/cache.html.0292d56f.js"><link rel="prefetch" href="/assets/events.html.db6ad6a3.js"><link rel="prefetch" href="/assets/mail.html.70b21126.js"><link rel="prefetch" href="/assets/task-scheduling.html.df7e9874.js"><link rel="prefetch" href="/assets/index.html.d4ab3fdb.js"><link rel="prefetch" href="/assets/compile.html.c714fac8.js"><link rel="prefetch" href="/assets/configuration.html.ce450d2d.js"><link rel="prefetch" href="/assets/directory-structure.html.0efad36e.js"><link rel="prefetch" href="/assets/installation.html.be3feccb.js"><link rel="prefetch" href="/assets/index.html.48d3a422.js"><link rel="prefetch" href="/assets/controllers.html.95b50230.js"><link rel="prefetch" href="/assets/grpc.html.02fa9f3d.js"><link rel="prefetch" href="/assets/logging.html.fd56ca16.js"><link rel="prefetch" href="/assets/middleware.html.abe13e77.js"><link rel="prefetch" href="/assets/response.html.00950bb2.js"><link rel="prefetch" href="/assets/routing.html.fdb95e10.js"><link rel="prefetch" href="/assets/404.html.d2dc3323.js"><link rel="prefetch" href="/assets/index.html.7c5f0389.js"><link rel="prefetch" href="/assets/index.html.2a8d9d68.js"><link rel="prefetch" href="/assets/getting-started.html.6198753e.js"><link rel="prefetch" href="/assets/migrations.html.5e9f57e3.js"><link rel="prefetch" href="/assets/index.html.6acb1745.js"><link rel="prefetch" href="/assets/facades.html.0c8efa42.js"><link rel="prefetch" href="/assets/request-lifecycle.html.ccad6322.js"><link rel="prefetch" href="/assets/service-providers.html.1a58eacc.js"><link rel="prefetch" href="/assets/index.html.305219b9.js"><link rel="prefetch" href="/assets/artisan-console.html.5cf4270b.js"><link rel="prefetch" href="/assets/cache.html.1bd75c07.js"><link rel="prefetch" href="/assets/events.html.4750aecd.js"><link rel="prefetch" href="/assets/mail.html.6111d154.js"><link rel="prefetch" href="/assets/queues.html.7528e333.js"><link rel="prefetch" href="/assets/task-scheduling.html.77bee9bb.js"><link rel="prefetch" href="/assets/index.html.b322886e.js"><link rel="prefetch" href="/assets/compile.html.790cfde1.js"><link rel="prefetch" href="/assets/configuration.html.f0ad1bc3.js"><link rel="prefetch" href="/assets/directory-structure.html.ba890a10.js"><link rel="prefetch" href="/assets/installation.html.f934f5a0.js"><link rel="prefetch" href="/assets/index.html.7047afd5.js"><link rel="prefetch" href="/assets/controllers.html.f459d292.js"><link rel="prefetch" href="/assets/grpc.html.f9ce6127.js"><link rel="prefetch" href="/assets/logging.html.02d13bda.js"><link rel="prefetch" href="/assets/middleware.html.22eccf02.js"><link rel="prefetch" href="/assets/response.html.f474c4d0.js"><link rel="prefetch" href="/assets/routing.html.b611f919.js"><link rel="prefetch" href="/assets/index.html.ec37f516.js"><link rel="prefetch" href="/assets/index.html.6a252e10.js"><link rel="prefetch" href="/assets/getting-started.html.fc0a12bf.js"><link rel="prefetch" href="/assets/migrations.html.3c8ea51b.js"><link rel="prefetch" href="/assets/index.html.500821ed.js"><link rel="prefetch" href="/assets/facades.html.7868fedb.js"><link rel="prefetch" href="/assets/request-lifecycle.html.95c1bca5.js"><link rel="prefetch" href="/assets/service-providers.html.2b6185ac.js"><link rel="prefetch" href="/assets/index.html.02b2df34.js"><link rel="prefetch" href="/assets/artisan-console.html.4e2005a1.js"><link rel="prefetch" href="/assets/cache.html.e8f37422.js"><link rel="prefetch" href="/assets/events.html.2f68e956.js"><link rel="prefetch" href="/assets/mail.html.eefe14e0.js"><link rel="prefetch" href="/assets/task-scheduling.html.7f5bd221.js"><link rel="prefetch" href="/assets/index.html.9f01a32e.js"><link rel="prefetch" href="/assets/compile.html.63b5e01a.js"><link rel="prefetch" href="/assets/configuration.html.2dc4bad5.js"><link rel="prefetch" href="/assets/directory-structure.html.e06e02c8.js"><link rel="prefetch" href="/assets/installation.html.82d56f70.js"><link rel="prefetch" href="/assets/index.html.45c916d3.js"><link rel="prefetch" href="/assets/controllers.html.4375cf2b.js"><link rel="prefetch" href="/assets/grpc.html.f38f03ad.js"><link rel="prefetch" href="/assets/logging.html.fdf7b4ea.js"><link rel="prefetch" href="/assets/middleware.html.dcbd0ba1.js"><link rel="prefetch" href="/assets/response.html.256c9d49.js"><link rel="prefetch" href="/assets/routing.html.9663cfb1.js"><link rel="prefetch" href="/assets/404.html.3fec0a9f.js">
+    <link rel="stylesheet" href="/assets/style.b73ef7a3.css">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><!--[--><header class="navbar"><div class="toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a href="/zh/" class=""><img class="logo" src="https://user-images.githubusercontent.com/24771476/188801966-1b865cb7-99eb-4a62-a486-0c4d9cf7b7fb.png" alt="Goravel"><span class="site-name can-hide">Goravel</span></a></span><div class="navbar-items-wrapper" style=""><!--[--><!--]--><nav class="navbar-items can-hide"><!--[--><div class="navbar-item"><a href="/zh/" class="" aria-label="首页"><!--[--><!--]--> 首页 <!--[--><!--]--></a></div><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="Select language"><span class="title">Languages</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="Select language"><span class="title">Languages</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/digging-deeper/queues.html" class="" aria-label="English"><!--[--><!--]--> English <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a aria-current="page" href="/zh/digging-deeper/queues.html" class="router-link-active router-link-exact-active router-link-active" aria-label="简体中文"><!--[--><!--]--> 简体中文 <!--[--><!--]--></a></li><!--]--></ul></div></div><!--]--></nav><!--[--><!--]--><button class="toggle-color-mode-button" title="toggle color mode"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><nav class="navbar-items"><!--[--><div class="navbar-item"><a href="/zh/" class="" aria-label="首页"><!--[--><!--]--> 首页 <!--[--><!--]--></a></div><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="Select language"><span class="title">Languages</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="Select language"><span class="title">Languages</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/digging-deeper/queues.html" class="" aria-label="English"><!--[--><!--]--> English <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a aria-current="page" href="/zh/digging-deeper/queues.html" class="router-link-active router-link-exact-active router-link-active" aria-label="简体中文"><!--[--><!--]--> 简体中文 <!--[--><!--]--></a></li><!--]--></ul></div></div><!--]--></nav><!--[--><!--]--><ul class="sidebar-items"><!--[--><li><p tabindex="0" class="sidebar-item sidebar-heading">入门指南 <!----></p><ul style="" class="sidebar-item-children"><!--[--><li><a href="/zh/getting-started/installation" class="sidebar-item" aria-label="安装"><!--[--><!--]--> 安装 <!--[--><!--]--></a><!----></li><li><a href="/zh/getting-started/configuration" class="sidebar-item" aria-label="配置信息"><!--[--><!--]--> 配置信息 <!--[--><!--]--></a><!----></li><li><a href="/zh/getting-started/directory-structure" class="sidebar-item" aria-label="文件夹结构"><!--[--><!--]--> 文件夹结构 <!--[--><!--]--></a><!----></li><li><a href="/zh/getting-started/compile" class="sidebar-item" aria-label="编译"><!--[--><!--]--> 编译 <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><p tabindex="0" class="sidebar-item sidebar-heading">核心架构 <!----></p><ul style="" class="sidebar-item-children"><!--[--><li><a href="/zh/architecutre-concepts/request-lifecycle" class="sidebar-item" aria-label="请求周期"><!--[--><!--]--> 请求周期 <!--[--><!--]--></a><!----></li><li><a href="/zh/architecutre-concepts/service-providers" class="sidebar-item" aria-label="服务提供者"><!--[--><!--]--> 服务提供者 <!--[--><!--]--></a><!----></li><li><a href="/zh/architecutre-concepts/facades" class="sidebar-item" aria-label="Facades"><!--[--><!--]--> Facades <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><p tabindex="0" class="sidebar-item sidebar-heading">基本功能 <!----></p><ul style="" class="sidebar-item-children"><!--[--><li><a href="/zh/the-basics/routing" class="sidebar-item" aria-label="路由"><!--[--><!--]--> 路由 <!--[--><!--]--></a><!----></li><li><a href="/zh/the-basics/middleware" class="sidebar-item" aria-label="中间件"><!--[--><!--]--> 中间件 <!--[--><!--]--></a><!----></li><li><a href="/zh/the-basics/controllers" class="sidebar-item" aria-label="控制器"><!--[--><!--]--> 控制器 <!--[--><!--]--></a><!----></li><li><a href="/zh/the-basics/response" class="sidebar-item" aria-label="响应"><!--[--><!--]--> 响应 <!--[--><!--]--></a><!----></li><li><a href="/zh/the-basics/grpc" class="sidebar-item" aria-label="Grpc"><!--[--><!--]--> Grpc <!--[--><!--]--></a><!----></li><li><a href="/zh/the-basics/logging" class="sidebar-item" aria-label="日志"><!--[--><!--]--> 日志 <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><p tabindex="0" class="sidebar-item sidebar-heading active">综合话题 <!----></p><ul style="" class="sidebar-item-children"><!--[--><li><a href="/zh/digging-deeper/artisan-console" class="sidebar-item" aria-label="Artisan 命令行"><!--[--><!--]--> Artisan 命令行 <!--[--><!--]--></a><!----></li><li><a href="/zh/digging-deeper/cache" class="sidebar-item" aria-label="缓存系统"><!--[--><!--]--> 缓存系统 <!--[--><!--]--></a><!----></li><li><a href="/zh/digging-deeper/events" class="sidebar-item" aria-label="事件系统"><!--[--><!--]--> 事件系统 <!--[--><!--]--></a><!----></li><li><a href="/zh/digging-deeper/queues" class="router-link-active sidebar-item active" aria-label="队列"><!--[--><!--]--> 队列 <!--[--><!--]--></a><!----></li><li><a href="/zh/digging-deeper/task-scheduling" class="sidebar-item" aria-label="任务调度"><!--[--><!--]--> 任务调度 <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><p tabindex="0" class="sidebar-item sidebar-heading">Eloquent ORM <!----></p><ul style="" class="sidebar-item-children"><!--[--><li><a href="/zh/ORM/getting-started" class="sidebar-item" aria-label="快速入门"><!--[--><!--]--> 快速入门 <!--[--><!--]--></a><!----></li><li><a href="/zh/ORM/migrations" class="sidebar-item" aria-label="数据库迁移"><!--[--><!--]--> 数据库迁移 <!--[--><!--]--></a><!----></li><!--]--></ul></li><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><!--]--><div><h1 id="队列" tabindex="-1"><a class="header-anchor" href="#队列" aria-hidden="true">#</a> 队列</h1><nav class="table-of-contents"><ul><li><a aria-current="page" href="/zh/digging-deeper/queues.html#简介" class="router-link-active router-link-exact-active">简介</a><ul><li><a aria-current="page" href="/zh/digging-deeper/queues.html#连接-vs-队列" class="router-link-active router-link-exact-active">连接 Vs 队列</a></li></ul></li><li><a aria-current="page" href="/zh/digging-deeper/queues.html#创建任务" class="router-link-active router-link-exact-active">创建任务</a><ul><li><a aria-current="page" href="/zh/digging-deeper/queues.html#生成任务类" class="router-link-active router-link-exact-active">生成任务类</a></li><li><a aria-current="page" href="/zh/digging-deeper/queues.html#类结构" class="router-link-active router-link-exact-active">类结构</a></li><li><a aria-current="page" href="/zh/digging-deeper/queues.html#注册任务" class="router-link-active router-link-exact-active">注册任务</a></li></ul></li><li><a aria-current="page" href="/zh/digging-deeper/queues.html#启动队列服务器" class="router-link-active router-link-exact-active">启动队列服务器</a></li><li><a aria-current="page" href="/zh/digging-deeper/queues.html#调度任务" class="router-link-active router-link-exact-active">调度任务</a><ul><li><a aria-current="page" href="/zh/digging-deeper/queues.html#同步调度" class="router-link-active router-link-exact-active">同步调度</a></li><li><a aria-current="page" href="/zh/digging-deeper/queues.html#任务链" class="router-link-active router-link-exact-active">任务链</a></li><li><a aria-current="page" href="/zh/digging-deeper/queues.html#自定义队列-连接" class="router-link-active router-link-exact-active">自定义队列 &amp; 连接</a></li></ul></li><li><a aria-current="page" href="/zh/digging-deeper/queues.html#queue-arg-type-支持的类型" class="router-link-active router-link-exact-active">queue.Arg.Type 支持的类型</a></li></ul></nav><h2 id="简介" tabindex="-1"><a class="header-anchor" href="#简介" aria-hidden="true">#</a> 简介</h2><p>在构建 Web 应用程序时，您可能需要执行一些任务（例如解析和存储上传的 CSV 文件），但这些任务在典型的 Web 请求中花费的时间太长。幸运的是，Goravel 允许您轻松地创建可在后台排队处理的任务作业。通过将耗时的任务移到队列中，您的应用程序可以以超快的速度响应 Web 请求，并为客户提供更好的用户体验。</p><p>队列配置文件存储在 <code>config/queue.go</code> 中。 在这个文件中，您可以找到框架中包含的队列驱动程序的连接配置，其中包括 <code>redis</code> 和 <code>sync</code> 驱动。</p><h3 id="连接-vs-队列" tabindex="-1"><a class="header-anchor" href="#连接-vs-队列" aria-hidden="true">#</a> 连接 Vs 队列</h3><p>在开始使用 Goravel 队列之前，理解「连接」和「队列」之间的区别非常重要。在 <code>config/queue.go</code> 配置文件中，有一个 connections 配置选项。此选项定义到后端服务（如 Redis）的特定连接。然而，任何给定的队列连接都可能有多个「队列」，这些「队列」可能被认为是不同的堆栈或成堆的排队任务。</p><p>请注意，<code>config/queue.go</code> 文件中的每个连接配置示例都包含一个 queue 属性。 这是将任务发送到给定连接时将被分配到的默认队列。换句话说，如果您没有显式地定义任务应该被发送到哪个队列，那么该任务将被放置在连接配置的 queue 属性中定义的队列上：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>// 这个任务将被推送到默认队列
+err := facades.Queue.Job(&amp;jobs.Test{}, []queue.Arg{
+  {Type: &quot;int&quot;, Value: 1}
+}).Dispatch()
+
+// 这个任务将被推送到 &quot;emails&quot; 队列
+err := facades.Queue.Job(&amp;jobs.Test{}, []queue.Arg{
+  {Type: &quot;int&quot;, Value: 1}
+}).OnQueue(&quot;emails&quot;).Dispatch()
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="创建任务" tabindex="-1"><a class="header-anchor" href="#创建任务" aria-hidden="true">#</a> 创建任务</h2><h3 id="生成任务类" tabindex="-1"><a class="header-anchor" href="#生成任务类" aria-hidden="true">#</a> 生成任务类</h3><p>默认情况下，应用程序的所有的可排队任务都被存储在了 <code>app/jobs</code> 目录中。如果 <code>app/jobs</code> 目录不存在，当您运行 <code>make:job</code> Artisan 命令时，将会自动创建该目录：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>go run . artisan make:job ProcessPodcast
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="类结构" tabindex="-1"><a class="header-anchor" href="#类结构" aria-hidden="true">#</a> 类结构</h3><p>任务类非常简单，包含 <code>Signature</code>, <code>Handle</code> 方法，<code>Signature</code> 是任务类的唯一标识，<code>Handle</code> 在队列处理任务时将会被调用，在调用任务时传入的 <code>[]queue.Arg{}</code> 将会被传入 <code>Handle</code> 中：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>package jobs
+
+type ProcessPodcast struct {
+}
+
+//Signature The name and signature of the job.
+func (receiver *ProcessPodcast) Signature() string {
+  return &quot;process_podcast&quot;
+}
+
+//Handle Execute the job.
+func (receiver *ProcessPodcast) Handle(args ...interface{}) error {
+  return nil
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="注册任务" tabindex="-1"><a class="header-anchor" href="#注册任务" aria-hidden="true">#</a> 注册任务</h3><p>当任务创建好后，需要注册到 <code>app/provides/queue_service_provider.go</code>，以便能够正确调用。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>func (receiver *QueueServiceProvider) Jobs() []queue.Job {
+  return []queue.Job{
+    &amp;jobs.Test{},
+  }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="启动队列服务器" tabindex="-1"><a class="header-anchor" href="#启动队列服务器" aria-hidden="true">#</a> 启动队列服务器</h2><p>在根目录下 <code>main.go</code> 中启动队列服务器</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>package main
+
+import (
+  &quot;github.com/goravel/framework/support/facades&quot;
+  &quot;goravel/bootstrap&quot;
+)
+
+func main() {
+  // This bootstraps the framework and gets it ready for use.
+  bootstrap.Boot()
+
+  // Start http server by facades.Route.
+  go func() {
+    if err := facades.Route.Run(facades.Config.GetString(&quot;app.host&quot;)); err != nil {
+      facades.Log.Errorf(&quot;Route run error: %v&quot;, err)
+    }
+  }()
+
+  // Start queue server by facades.Queue.
+  go func() {
+    if err := facades.Queue.Worker(queue.Args{}).Run(); err != nil {
+      facades.Log.Errorf(&quot;Queue run error: %v&quot;, err)
+    }
+  }()
+
+  select {}
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>facades.Queue.Worker</code> 方法中可以传入不同的参数，通过启动多个 <code>facades.Queue.Worker</code>，可以达到监听多个队列的目的。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>// 不传参数，默认监听 `config/queue.go` 中的配置，并发数为 1
+go func() {
+    if err := facades.Queue.Worker(queue.Args{}).Run(); err != nil {
+      facades.Log.Errorf(&quot;Queue run error: %v&quot;, err)
+    }
+  }()
+
+// 监听 redis 链接的 processing 队列，并发数 10
+go func() {
+    if err := facades.Queue.Worker(queue.Args{
+      Connection: &quot;redis&quot;,
+      Queue: &quot;processing&quot;,
+      Concurrent: 10,
+    }).Run(); err != nil {
+      facades.Log.Errorf(&quot;Queue run error: %v&quot;, err)
+    }
+  }()
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="调度任务" tabindex="-1"><a class="header-anchor" href="#调度任务" aria-hidden="true">#</a> 调度任务</h2><p>一旦您写好了您的任务类，您可以使用任务本身的 <code>dispatch</code> 方法来调度它：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>package controllers
+
+import (
+  &quot;github.com/gin-gonic/gin&quot;
+  &quot;github.com/goravel/framework/contracts/queue&quot;
+  &quot;github.com/goravel/framework/support/facades&quot;
+  &quot;goravel/app/jobs&quot;
+)
+
+type UserController struct {
+}
+
+func (r UserController) Show(ctx *gin.Context) {
+  err := facades.Queue.Job(&amp;jobs.Test{}, []queue.Arg{}).Dispatch()
+  if err != nil {
+    // do something
+  }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="同步调度" tabindex="-1"><a class="header-anchor" href="#同步调度" aria-hidden="true">#</a> 同步调度</h3><p>如果您想立即（同步）调度任务，您可以使用 <code>dispatchSync</code> 方法。使用此方法时，任务不会排队，会在当前进程内立即执行：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>package controllers
+
+import (
+  &quot;github.com/gin-gonic/gin&quot;
+  &quot;github.com/goravel/framework/contracts/queue&quot;
+  &quot;github.com/goravel/framework/support/facades&quot;
+  &quot;goravel/app/jobs&quot;
+)
+
+type UserController struct {
+}
+
+func (r UserController) Show(ctx *gin.Context) {
+  err := facades.Queue.Job(&amp;jobs.Test{}, []queue.Arg{}).DispatchSync()
+  if err != nil {
+    // do something
+  }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="任务链" tabindex="-1"><a class="header-anchor" href="#任务链" aria-hidden="true">#</a> 任务链</h3><p>任务链允许您指定一组应在主任务成功执行后按顺序运行的排队任务。如果序列中的一个任务失败，其余的任务将不会运行。要执行一个排队的任务链，您可以使用 <code>facades.Queue</code> 提供的 <code>chain</code> 方法：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>err := facades.Queue.Chain([]queue.Jobs{
+  {
+    Job: &amp;jobs.Test{},
+    Args: []queue.Arg{
+      {Type: &quot;int&quot;, Value: 1},
+    },
+  },
+  {
+    Job: &amp;jobs.Test1{},
+    Args: []queue.Arg{
+      {Type: &quot;int&quot;, Value: 2},
+    },
+  },
+}).Dispatch()
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="自定义队列-连接" tabindex="-1"><a class="header-anchor" href="#自定义队列-连接" aria-hidden="true">#</a> 自定义队列 &amp; 连接</h3><h4 id="分派到特定队列" tabindex="-1"><a class="header-anchor" href="#分派到特定队列" aria-hidden="true">#</a> 分派到特定队列</h4><p>通过将任务推送到不同的队列，您可以对排队的任务进行「分类」，甚至可以优先考虑分配给各个队列的 worker 数量。请记住，这不会将任务推送到队列配置文件定义的不同队列「连接」，而只会推送到单个连接中的特定队列。要指定队列，请在调度任务时使用 onQueue 方法：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>err := facades.Queue.Job(&amp;jobs.Test{}, []queue.Arg{}).OnQueue(&quot;processing&quot;).Dispatch()
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h4 id="调度到特定连接" tabindex="-1"><a class="header-anchor" href="#调度到特定连接" aria-hidden="true">#</a> 调度到特定连接</h4><p>如果您的应用程序与多个队列连接交互，您可以使用 <code>onConnection</code> 方法指定将任务推送到哪个连接：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>err := facades.Queue.Job(&amp;jobs.Test{}, []queue.Arg{}).OnConnection(&quot;sync&quot;).Dispatch()
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>您可以将 onConnection 和 onQueue 方法链接在一起，以指定任务的连接和队列：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>err := facades.Queue.Job(&amp;jobs.Test{}, []queue.Arg{}).OnConnection(&quot;sync&quot;).OnQueue(&quot;processing&quot;).Dispatch()
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2 id="queue-arg-type-支持的类型" tabindex="-1"><a class="header-anchor" href="#queue-arg-type-支持的类型" aria-hidden="true">#</a> <code>queue.Arg.Type</code> 支持的类型</h2><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>bool
+int
+int8
+int16
+int32
+int64
+uint
+uint8
+uint16
+uint32
+uint64
+float32
+float64
+string
+[]bool
+[]int
+[]int8
+[]int16
+[]int32
+[]int64
+[]uint
+[]uint8
+[]uint16
+[]uint32
+[]uint64
+[]float32
+[]float64
+[]string
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div><!--[--><!--]--></div><footer class="page-meta"><!----><div class="meta-item last-updated"><span class="meta-item-label">Last Updated: </span><!----></div><div class="meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: hwbrzzl@qq.com">Bowens</span><!--[-->, <!--]--><!--]--><!--[--><span class="contributor" title="email: wenbo.han@compass.com">Wenbo han</span><!----><!--]--><!--]--></span></div></footer><!----><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
+    <script type="module" src="/assets/app.7583e1e5.js" defer></script>
+  </body>
+</html>
