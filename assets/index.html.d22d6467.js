@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-743bf51e","path":"/ORM/","title":"ORM","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1662479816000,"contributors":[{"name":"Bowens","email":"hwbrzzl@qq.com","commits":1}]},"filePathRelative":"ORM/README.md"}');export{e as data};
