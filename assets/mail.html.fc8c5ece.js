@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as o,b as c}from"./app.1c33e199.js";const _={},s=c("p",null,"To be completed",-1),l=[s];function n(a,r){return t(),o("div",null,l)}const m=e(_,[["render",n],["__file","mail.html.vue"]]);export{m as default};
