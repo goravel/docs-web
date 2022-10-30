@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-559731cd","path":"/v0/zh/architecutre-concepts/","title":"\u6838\u5FC3\u67B6\u6784","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1665295946000,"contributors":[{"name":"Bowens","email":"hwbrzzl@qq.com","commits":1}]},"filePathRelative":"v0/zh/architecutre-concepts/README.md"}');export{e as data};

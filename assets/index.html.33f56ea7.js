@@ -1,1 +1,0 @@
-import{_ as t,o as c,c as r,b as e,e as a}from"./app.6881ea8b.js";const n={},o=e("h1",{id:"architecture-concepts",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#architecture-concepts","aria-hidden":"true"},"#"),a(" Architecture Concepts")],-1),s=[o];function i(_,d){return c(),r("div",null,s)}const l=t(n,[["render",i],["__file","index.html.vue"]]);export{l as default};

@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-744afcfe","path":"/orm/","title":"ORM","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"orm/README.md"}');export{e as data};

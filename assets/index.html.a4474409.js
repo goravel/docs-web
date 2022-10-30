@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-751010bd","path":"/v1.1/zh/digging-deeper/","title":"\u7EFC\u5408\u8BDD\u9898","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1667036344000,"contributors":[{"name":"Bowens","email":"hwbrzzl@qq.com","commits":1}]},"filePathRelative":"v1.1/zh/digging-deeper/README.md"}');export{e as data};
