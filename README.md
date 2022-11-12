@@ -3,17 +3,23 @@
 ## Install
 
 ```
-pnpm install
+npm install
 ```
 
 ## Run dev
 
 ```
-pnpm docs:dev
+npm run docs:dev
 ```
 
-## Pull submodule
+## Run Build
 
 ```
-git submodule update --init --recursive
+npm run docs:build
+```
+
+## Run Deploy
+
+```
+npm run docs:deploy
 ```
