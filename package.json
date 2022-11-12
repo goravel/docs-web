@@ -6,7 +6,6 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "docs:netlify": "git clone https://github.com:goravel/docs.git docs && vuepress build docs",
     "docs:deploy": "vuepress build docs && gh-pages -d docs/.vuepress/dist && rm -rf docs/.vuepress/dist"
   },
   "keywords": [],
