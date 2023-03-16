@@ -11,6 +11,7 @@ specifiers:
   vue: ^3.2.47
   vuepress: 2.0.0-beta.61
   vuepress-plugin-comment2: ^2.0.0-beta.193
+  vuepress-plugin-seo2: ^2.0.0-beta.193
 
 devDependencies:
   '@vuepress/client': 2.0.0-beta.61
@@ -23,6 +24,7 @@ devDependencies:
   vue: 3.2.47
   vuepress: 2.0.0-beta.61_c8acb30f9d03c99feb83a21629baf3e5
   vuepress-plugin-comment2: 2.0.0-beta.193_vuepress@2.0.0-beta.61
+  vuepress-plugin-seo2: 2.0.0-beta.193_vuepress@2.0.0-beta.61
 
 packages:
 
@@ -2434,6 +2436,30 @@ packages:
       '@vuepress/utils': 2.0.0-beta.61
       chokidar: 3.5.3
       sass: 1.59.3
+      vuepress: 2.0.0-beta.61_c8acb30f9d03c99feb83a21629baf3e5
+      vuepress-shared: 2.0.0-beta.193_vuepress@2.0.0-beta.61
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - supports-color
+    dev: true
+
+  /vuepress-plugin-seo2/2.0.0-beta.193_vuepress@2.0.0-beta.61:
+    resolution: {integrity: sha512-Mw2IuKjvL5d08mMh87dCdIR+fRRM/prll+2lIsjSByAoW2A0CP7nV58XIKO2bMoDikGL44dom9qkrL8FP4Oh7A==}
+    engines: {node: ^14.18.0 || >=16.0.0, npm: '>=8', pnpm: '>=7'}
+    peerDependencies:
+      vuepress: 2.0.0-beta.61
+      vuepress-vite: 2.0.0-beta.61
+      vuepress-webpack: 2.0.0-beta.61
+    peerDependenciesMeta:
+      vuepress:
+        optional: true
+      vuepress-vite:
+        optional: true
+      vuepress-webpack:
+        optional: true
+    dependencies:
+      '@vuepress/shared': 2.0.0-beta.61
+      '@vuepress/utils': 2.0.0-beta.61
       vuepress: 2.0.0-beta.61_c8acb30f9d03c99feb83a21629baf3e5
       vuepress-shared: 2.0.0-beta.193_vuepress@2.0.0-beta.61
     transitivePeerDependencies:
