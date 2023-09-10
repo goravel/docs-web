@@ -3,23 +3,23 @@
 ## Install
 
 ```
-npm install
+pnpm install
 ```
 
 ## Run dev
 
 ```
-npm run docs:dev
+pnpm docs:dev
 ```
 
 ## Run Build
 
 ```
-npm run docs:build
+pnpm docs:build
 ```
 
 ## Run Deploy
 
 ```
-npm run docs:deploy
+pnpm docs:deploy
 ```
