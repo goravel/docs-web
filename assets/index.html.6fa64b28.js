@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-d4244e56","path":"/the-basics/","title":"The Basics","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1662479816000,"contributors":[{"name":"Bowens","email":"hwbrzzl@qq.com","commits":1}]},"filePathRelative":"the-basics/README.md"}');export{e as data};
