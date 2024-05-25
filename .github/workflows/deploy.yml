@@ -42,8 +42,6 @@ jobs:
 
     - name: Build
       run: |
-        git config --global user.email "action@goravel.dev"
-        git config --global user.name "Action"
         pnpm docs:build
 
     - name: Push gh-pages
