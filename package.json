@@ -12,16 +12,17 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@vuepress/client": "^2.0.0-beta.61",
-    "@vuepress/plugin-docsearch": "2.0.0-beta.61",
-    "@vuepress/plugin-register-components": "2.0.0-beta.61",
-    "@vuepress/theme-default": "^2.0.0-beta.61",
-    "@vuepress/utils": "^2.0.0-beta.61",
+    "@vuepress/bundler-vite": "2.0.0-rc.9",
+    "@vuepress/client": "2.0.0-rc.9",
+    "@vuepress/plugin-comment": "2.0.0-rc.26",
+    "@vuepress/plugin-docsearch": "2.0.0-rc.26",
+    "@vuepress/plugin-register-components": "2.0.0-rc.21",
+    "@vuepress/plugin-seo": "2.0.0-rc.26",
+    "@vuepress/theme-default": "2.0.0-rc.26",
+    "@vuepress/utils": "2.0.0-rc.9",
     "gh-pages": "^4.0.0",
     "markdown-it-task-lists": "^2.1.1",
-    "vue": "^3.2.47",
-    "vuepress": "2.0.0-beta.61",
-    "vuepress-plugin-comment2": "^2.0.0-beta.193",
-    "vuepress-plugin-seo2": "^2.0.0-beta.193"
+    "vue": "^3.4.26",
+    "vuepress": "2.0.0-rc.9"
   }
 }
