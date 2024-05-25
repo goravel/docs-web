@@ -41,7 +41,10 @@ jobs:
       run: pnpm install
 
     - name: Build
-      run: pnpm docs:deploy
+      run: |
+        git config --global user.email "action@goravel.dev"
+        git config --global user.name "Action"
+        pnpm docs:deploy
 
     - name: Deploy
       uses: appleboy/ssh-action@v1.0.3
@@ -52,6 +55,6 @@ jobs:
         port: ${{ secrets.SERVER_PORT }}
         allenvs: true
         script: |
-          cd /data/wwwroot/www.goravel.dev/ && git pull
-          cd /data/wwwroot/docs.goravel.dev/ && git pull
+          cd /data/wwwroot/www.goravel.dev/ && git pull origin gh-pages
+          cd /data/wwwroot/docs.goravel.dev/ && git pull origin gh-pages
           
