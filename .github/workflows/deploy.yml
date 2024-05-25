@@ -44,7 +44,13 @@ jobs:
       run: |
         git config --global user.email "action@goravel.dev"
         git config --global user.name "Action"
-        pnpm docs:deploy
+        pnpm docs:build
+
+    - name: Push gh-pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs/.vuepress/dist
 
     - name: Deploy
       uses: appleboy/ssh-action@v1.0.3
