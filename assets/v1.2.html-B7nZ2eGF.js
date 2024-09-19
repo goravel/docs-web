@@ -1,0 +1,32 @@
+import{_ as d,r as t,o as r,c as s,a as l,d as e,b as n,w as o,e as c}from"./app-Coq7p5-_.js";const p={},u=c(`<h1 id="upgrading-to-v1-2-from-v1-1" tabindex="-1"><a class="header-anchor" href="#upgrading-to-v1-2-from-v1-1"><span>Upgrading To v1.2 From v1.1</span></a></h1><h2 id="high-impact-changes" tabindex="-1"><a class="header-anchor" href="#high-impact-changes"><span>High Impact Changes</span></a></h2><ul><li><a href="#updating-dependencies">Updating Dependencies</a></li><li><a href="#auth-support-context">Auth support context</a></li></ul><h2 id="upgrade-guide" tabindex="-1"><a class="header-anchor" href="#upgrade-guide"><span>Upgrade Guide</span></a></h2><p><strong>Estimated Upgrade Time: 1 Minutes</strong></p><h3 id="updating-dependencies" tabindex="-1"><a class="header-anchor" href="#updating-dependencies"><span>Updating Dependencies</span></a></h3><p><strong>Likelihood Of Impact: High</strong></p><p>Update dependencies in the <code>go.mod</code> file：</p><div class="language-go line-numbers-mode" data-ext="go" data-title="go"><pre class="language-go"><code>github<span class="token punctuation">.</span>com<span class="token operator">/</span>goravel<span class="token operator">/</span>framework v1<span class="token punctuation">.</span><span class="token number">2.1</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="auth-support-context" tabindex="-1"><a class="header-anchor" href="#auth-support-context"><span>Auth Support Context</span></a></h3><p><strong>Likelihood Of Impact: High</strong></p><div class="language-text line-numbers-mode" data-ext="text" data-title="text"><pre class="language-text"><code>// Old
+facades.Auth.Parse(token string) error
+
+// New
+facades.Auth.Parse(ctx http.Context, token string) error
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-text line-numbers-mode" data-ext="text" data-title="text"><pre class="language-text"><code>// Old
+facades.Auth.User(ctx http.Context, user interface{}) error
+
+// New
+facades.Auth.User(ctx http.Context, user interface{}) error
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-text line-numbers-mode" data-ext="text" data-title="text"><pre class="language-text"><code>// Old
+facades.Auth.facades.Auth.Login(user interface{}) (token string, err error)
+
+// New
+facades.Auth.facades.Auth.Login(ctx http.Context, user interface{}) (token string, err error)
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-text line-numbers-mode" data-ext="text" data-title="text"><pre class="language-text"><code>// Old
+facades.Auth.LoginUsingID(id interface{}) (token string, err error)
+
+// New
+facades.Auth.LoginUsingID(ctx http.Context, id interface{}) (token string, err error)
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-text line-numbers-mode" data-ext="text" data-title="text"><pre class="language-text"><code>// Old
+facades.Auth.Refresh() (token string, err error)
+
+// New
+facades.Auth.Refresh(ctx http.Context) (token string, err error)
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-text line-numbers-mode" data-ext="text" data-title="text"><pre class="language-text"><code>// Old
+facades.Auth.Logout() error
+
+// New
+facades.Auth.Logout(ctx http.Context) error
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,17);function g(v,h){const a=t("RouteLink"),i=t("CommentService");return r(),s("div",null,[u,l("p",null,[e("For detail "),n(a,{to:"/security/authentication.html"},{default:o(()=>[e("facades.Auth")]),_:1}),e("。")]),n(i)])}const x=d(p,[["render",g],["__file","v1.2.html.vue"]]),b=JSON.parse('{"path":"/upgrade/v1.2.html","title":"Upgrading To v1.2 From v1.1","lang":"en-US","frontmatter":{"description":"Upgrading To v1.2 From v1.1 High Impact Changes Updating Dependencies Auth support context Upgrade Guide Estimated Upgrade Time: 1 Minutes Updating Dependencies Likelihood Of Im...","head":[["link",{"rel":"alternate","hreflang":"zh-cn","href":"https://goravel.dev/zh/upgrade/v1.2.html"}],["meta",{"property":"og:url","content":"https://goravel.dev/upgrade/v1.2.html"}],["meta",{"property":"og:site_name","content":"Goravel"}],["meta",{"property":"og:title","content":"/upgrade/v1.2.html"}],["meta",{"property":"og:description","content":"Upgrading To v1.2 From v1.1 High Impact Changes Updating Dependencies Auth support context Upgrade Guide Estimated Upgrade Time: 1 Minutes Updating Dependencies Likelihood Of Im..."}],["meta",{"property":"og:type","content":"article"}],["meta",{"property":"og:locale","content":"en-US"}],["meta",{"property":"og:locale:alternate","content":"zh-CN"}],["script",{"type":"application/ld+json"},"{\\"@context\\":\\"https://schema.org\\",\\"@type\\":\\"Article\\",\\"headline\\":\\"Upgrading To v1.2 From v1.1\\",\\"image\\":[\\"\\"],\\"dateModified\\":null,\\"author\\":[]}"]]},"headers":[{"level":2,"title":"High Impact Changes","slug":"high-impact-changes","link":"#high-impact-changes","children":[]},{"level":2,"title":"Upgrade Guide","slug":"upgrade-guide","link":"#upgrade-guide","children":[{"level":3,"title":"Updating Dependencies","slug":"updating-dependencies","link":"#updating-dependencies","children":[]},{"level":3,"title":"Auth Support Context","slug":"auth-support-context","link":"#auth-support-context","children":[]}]}],"git":{},"filePathRelative":"upgrade/v1.2.md","autoDesc":true}');export{x as comp,b as data};
