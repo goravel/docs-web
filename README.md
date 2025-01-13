@@ -1,4 +1,12 @@
-# Goravel document
+# Goravel Document
+
+This is vuepress skeleton for goravel document.
+
+## Clone 
+
+```
+git clone --recursive git@github.com:goravel/docs-web.git
+```
 
 ## Install
 
