@@ -9,10 +9,10 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with: 
-        submodules: true
+        submodules: recursive
 
     - name: Switch to pre branch
-      run: cd docs && git fetch && git checkout origin bowen/v1.16
+      run: cd docs && git fetch && git checkout bowen/v1.16
 
     - name: Install Node.js
       uses: actions/setup-node@v4
