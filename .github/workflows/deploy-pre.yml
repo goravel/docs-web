@@ -12,7 +12,7 @@ jobs:
         submodules: true
 
     - name: Switch to pre branch
-      run: git checkout bowen/v1.16
+      run: git fetch && git checkout bowen/v1.16
 
     - name: Install Node.js
       uses: actions/setup-node@v4
