@@ -13,9 +13,7 @@ jobs:
 
     - name: Switch to pre branch
       run: |
-        cd docs
-        git fetch
-        git checkout bowen/v1.16
+        ll
 
     - name: Install Node.js
       uses: actions/setup-node@v4
