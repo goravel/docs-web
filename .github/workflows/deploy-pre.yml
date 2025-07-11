@@ -13,7 +13,7 @@ jobs:
 
     - name: Switch to pre branch
       run: |
-        ll
+        ls -a
 
     - name: Install Node.js
       uses: actions/setup-node@v4
