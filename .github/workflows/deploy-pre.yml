@@ -13,6 +13,8 @@ jobs:
 
     - name: Switch to pre branch
       run: |
+        rm -rf docs
+        git clone https://github.com/goravel/docs.git docs
         cd docs
         git status
         git remote -v
