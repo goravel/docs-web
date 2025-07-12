@@ -18,7 +18,7 @@ jobs:
         git remote -v
         git checkout master
         git status
-        git fetch
+        git fetch --all
         git checkout bowen/v1.16
         git status
 
