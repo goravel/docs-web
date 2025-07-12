@@ -16,6 +16,11 @@ jobs:
         cd docs
         git status
         git remote -v
+        git checkout master
+        git status
+        git fetch
+        git checkout bowen/v1.16
+        git status
 
     - name: Install Node.js
       uses: actions/setup-node@v4
