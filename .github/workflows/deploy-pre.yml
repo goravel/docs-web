@@ -15,6 +15,7 @@ jobs:
       run: |
         cd docs
         git status
+        git remote -v
 
     - name: Install Node.js
       uses: actions/setup-node@v4
