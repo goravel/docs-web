@@ -17,7 +17,6 @@ jobs:
         git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
         git fetch
         git checkout bowen/v1.16
-        git status
 
     - name: Install Node.js
       uses: actions/setup-node@v4
