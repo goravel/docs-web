@@ -14,9 +14,9 @@ jobs:
     - name: Switch to pre branch
       run: |
         cd docs
-        ls -a
-        git fetch
+        git fetch origin bowen/v1.16
         git checkout bowen/v1.16
+        git pull origin bowen/v1.16
 
     - name: Install Node.js
       uses: actions/setup-node@v4
