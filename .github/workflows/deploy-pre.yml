@@ -9,18 +9,13 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with: 
-        submodules: 'recursive'
+        submodules: true
 
     - name: Switch to pre branch
       run: |
-        rm -rf docs
-        git clone https://github.com/goravel/docs.git docs
         cd docs
-        git status
-        git remote -v
-        git checkout master
-        git status
-        git fetch --all
+        git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
+        git fetch
         git checkout bowen/v1.16
         git status
 
