@@ -1,3 +1,7 @@
+# DEPRECATED
+
+Please move to https://github.com/goravel/docs.
+
 # Goravel Document
 
 This is vuepress skeleton for goravel document.
